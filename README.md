@@ -5,7 +5,7 @@
 * [Report](https://www.slideshare.net/GianlucaCavallaro3/medical-data-management-covid19-detection-using-cough-recordings-chest-xrays-classification-and-generation)
 * [Requirements](#requirements)
 * [Pre-processing](#pre-processing)
-* [Data Augmentation](#data augmenation)
+* [Data Augmentation](#data-augmenation)
 
 
 ## Abstract
