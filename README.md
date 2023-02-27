@@ -77,6 +77,11 @@ In the `5_ModelTraining.ipynb` notebook you can find the script for the training
 As can be seen in the [Report](https://www.slideshare.net/GianlucaCavallaro3/medical-data-management-covid19-detection-using-cough-recordings-chest-xrays-classification-and-generation), the results obtained are not satisfactory. The obtained results could be influenced by the poor quality of the original dataset, as it is a crowd-sourced dataset (tracks are recorded using only [this interface](https://coughvid.epfl.ch/), and the quality of the tracks has been evaluated only for 1000 items of the dataset). In the future, we will try to improve this work by trying to get our hands on a higher quality dataset, as well as attempting different approaches for audio track processing, such as applying SpecAugment.
 
 
+## Contact
+
+[Gianluca Cavallaro](https://github.com/Gianluca128) - feel free to contact me!
+
+
 # Contributors
 
 * [Gianluca Cavallaro](https://github.com/Gianluca124) 
