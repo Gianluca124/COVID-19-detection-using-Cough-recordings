@@ -5,7 +5,7 @@
 * [Report](https://www.slideshare.net/GianlucaCavallaro3/medical-data-management-covid19-detection-using-cough-recordings-chest-xrays-classification-and-generation)
 * [Requirements](#requirements)
 * [Pre-processing](#pre-processing)
-* [Data Augmentation](#data-augmenation)
+* [Data Augmentation](#dataaugmenation)
 
 
 ## Abstract
@@ -53,7 +53,7 @@ ATTENTION: Make sure to replace the paths with the specific ones for your machin
 
 In the `2_Preprocessing.ipynb` notebook, all the required audio preprocessing steps are performed. In particular, operations were carried out to remove background noise, remove silence, and standardize the length of the audio tracks.
 
-## Data Augmentation
+## DataAugmentation
 
 In the `Classification.ipynb` notebook both binary and multi-class classification are performed. For both tasks several algorithm are proposed.
 
