@@ -6,6 +6,9 @@
 * [Requirements](#requirements)
 * [Pre-processing](#pre-processing)
 * [Data Augmentation](#data-augmentation)
+* [Feature Extraction](#feature-extraction)
+* [Training](#training)
+* [Results](#results)
 
 
 ## Abstract
@@ -53,26 +56,29 @@ ATTENTION: Make sure to replace the paths with the specific ones for your machin
 
 In the `2_Preprocessing.ipynb` notebook, all the required audio preprocessing steps are performed. In particular, operations were carried out to remove background noise, remove silence, and standardize the length of the audio tracks.
 
+
 ## Data Augmentation
 
-In the `Classification.ipynb` notebook both binary and multi-class classification are performed. For both tasks several algorithm are proposed.
+Given the imbalance of the dataset, data augmentation techniques are proposed to increase the size of the minority class. Pitch shift, shift, gain, and time stretch techniques are proposed. All operations are inside the notebook `3_DataAugmentation.ipynb`
 
 
-## Clustering
+## Feature Extraction
 
-In the `Clustering.ipynb` notebook the clustering task is proposed via K-Means clustering and Agglomerative Clustering.
+In the `4_FeatureExtraction.ipynb` notebook, MFCC coefficients for audio classification are extracted for both original and augmented audio.
+
+
+## Training
+
+In the `5_ModelTraining.ipynb` notebook you can find the script for the training of the proposed CNN.
 
 
 ## Results
 
-Check out the [Google Drive folder](https://drive.google.com/drive/u/1/folders/1veNClNl7CxCTFHVNY2Fp29hcMoEj-the) with all the trained models and results.
-
-## Status
-
- Project is: ![##c5f015](https://via.placeholder.com/15/c5f015/000000?text=+)  _Done_
+As can be seen in the [Report](https://www.slideshare.net/GianlucaCavallaro3/medical-data-management-covid19-detection-using-cough-recordings-chest-xrays-classification-and-generation), the results obtained are not satisfactory. The obtained results could be influenced by the poor quality of the original dataset, as it is a crowd-sourced dataset (tracks are recorded using only [this interface](https://coughvid.epfl.ch/), and the quality of the tracks has been evaluated only for 1000 items of the dataset). In the future, we will try to improve this work by trying to get our hands on a higher quality dataset, as well as attempting different approaches for audio track processing, such as applying SpecAugment.
 
 
 # Contributors
 
-* [Gianluca Cavallaro](https://github.com/Gianluca124)  
+* [Gianluca Cavallaro](https://github.com/Gianluca124) 
+* [Giorgio Carbone](https://github.com/giocoal) 
 * [Remo Marconzini](https://github.com/rmarconzini)
